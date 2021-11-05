@@ -9,9 +9,11 @@ class Ganancias {
     if (this.ingresos > this.gastos) {
       this.capital = this.ingresos - this.gastos;
       console.log("La semana tuvo ganancias de: ", this.capital);
+      return `La semana tuvo ganancias de:  ${this.capital}`;
     } else {
       this.capital = this.ingresos - this.gastos;
-      console.log("La semana tuvo peridas de: ", this.capital);
+      console.log("La semana tuvo perdidas de: ", this.capital);
+      return `La semana tuvo perdidas de:  ${this.capital}`;
     }
   }
 }
@@ -40,5 +42,8 @@ do {
 } while (bandera);
 
 for (const semana of semanas) {
-  semana.ganancia();
+  const div = document.createElement("div");
+  div.className = "div";
+  div.innerHTML = semana.ganancia();
+  document.body.appendChild(div);
 }
