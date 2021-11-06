@@ -92,6 +92,7 @@ class Presupuesto {
     document.getElementById("ganancia").innerHTML = this.presupuesto;
   }
 
+  //mostrar array
   mostrarCantDias() {
     this.cantDias.forEach((element) => console.log(element + " "));
   }
@@ -106,4 +107,5 @@ const presupuesto1 = new Presupuesto(
 presupuesto1.gananciaTotal();
 presupuesto1.mostrarGananciaTotal();
 presupuesto1.mostrarGastoTotal();
+//lamada para mostrar el array
 presupuesto1.mostrarCantDias();
