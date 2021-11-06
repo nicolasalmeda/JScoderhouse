@@ -50,38 +50,6 @@ class Presupuesto {
     this.presupuesto = sumador;
   }
 
-  ganancia(ganancias, cant) {
-    const div = document.createElement("div");
-    div.className = "elemento";
-    console.log("Este día fue positivo");
-
-    let total = ganancias - this.gastoTotal;
-    console.log(
-      "Las ganancias del día" + " " + cant + " " + "fue" + " " + total
-    );
-
-    div.innerHTML = `Las ganancias del dia ${dias} fue de ${total} `;
-    document.body.appendChild(div);
-
-    this.cantDias.push(total);
-    return total;
-  }
-
-  perdidas(ganancias, cant) {
-    const div = document.createElement("div");
-    div.className = "elemento";
-    console.log("El día fue negativo ");
-
-    let perdida = ganancias - this.gastoTotal;
-    console.log(
-      "La perdida total del dia" + " " + cant + " " + "fue" + " " + perdida
-    );
-    div.innerHTML = `La perdida del día ${dias} fue de ${perdida} `;
-    document.body.appendChild(div);
-    this.cantDias.push(perdida);
-    return perdida;
-  }
-
   mostrarGastoTotal() {
     document.getElementById("gastos").innerHTML = this.gastoTotal;
   }
