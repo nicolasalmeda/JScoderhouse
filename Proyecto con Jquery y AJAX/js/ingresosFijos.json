@@ -1,0 +1,17 @@
+[
+  {
+    "id": 0,
+    "description": "Alimentos",
+    "valor": 900
+  },
+  {
+    "id": 1,
+    "description": "Impuesto a la Ganancia",
+    "valor": 1500
+  },
+  {
+    "id": 3,
+    "description": "Impuesto a la Solidaridad",
+    "valor": 100
+  }
+]

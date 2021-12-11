@@ -123,4 +123,21 @@ $(document).ready(function () {
       }
     }
   });
+
+  $("#bmf").click(() => {
+    $.getJSON("ingresosFijos.json", function (respuesta, estado) {
+      if (estado === "success") {
+        let misDatos = respuesta;
+        for (const dato of misDatos) {
+          $("#ingresos-fijos").html(` <div class="elemento limpiarEstilos">
+          <div class="elemento_description">${dato.description}</div>
+          <div class="derecha limpiarEstilos">
+            <div class="elemento_valor">${dato.valor}</div>
+            </div>
+          </div>`);
+        }
+      } else {
+      }
+    });
+  });
 });

@@ -38,10 +38,10 @@ $(document).ready(function () {
     let presupuesto = totalIngresos() - totalEgresos();
     let porcentajeEgreso = totalEgresos() / totalIngresos();
 
-    $("#presupuesto").append(presupuesto);
-    $("#porcentaje").append(porcentajeEgreso);
-    $("#ingresos").append(totalIngresos());
-    $("#egresos").append(totalEgresos());
+    $("#presupuesto").html(presupuesto);
+    $("#porcentaje").html(porcentajeEgreso);
+    $("#ingresos").html(totalIngresos());
+    $("#egresos").html(totalEgresos());
 
     //document.getElementById("presupuesto").innerHTML = presupuesto;
     //document.getElementById("porcentaje").innerHTML = porcentajeEgreso;
@@ -54,7 +54,7 @@ $(document).ready(function () {
     for (let ingreso of ingresos) {
       ingresosHtml += crearIngresoHTML(ingreso);
     }
-    $("#lista-ingresos").append(ingresosHtml);
+    $("#lista-ingresos").html(ingresosHtml);
     //document.getElementById("lista-ingresos").innerHTML = ingresosHtml;
   };
 
@@ -68,7 +68,7 @@ $(document).ready(function () {
     return ingresoHTML;
   };
 
-  $("#bf").click(function (e) {
+  $("#bf").click(function () {
     let forma = document.forms["forma"];
     let tipo = forma["tipo"];
     let description = forma["description"];
