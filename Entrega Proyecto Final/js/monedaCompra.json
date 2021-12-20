@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "description": "Dolar",
+    "valor": 101.61,
+    "simbolo": "$"
+  },
+  {
+    "id": 1,
+    "description": "Euro",
+    "valor": 114.74,
+    "simbolo": "€"
+  },
+  {
+    "id": 3,
+    "description": "Real",
+    "valor": 17.88,
+    "simbolo": "R$"
+  }
+]
